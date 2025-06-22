@@ -1,0 +1,65 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f5b2f5b7;
+    font-family: 'sour gummy', sans-serif;
+}
+.kalkulator{
+    width: 265px;
+    background-color: plum;
+    border-radius: 8px;
+    box-shadow: 0 10px 7px 0 rgba(27, 1, 23, 0.781);
+    padding: 20px;
+}
+#displai{
+    height: 30px;
+    width: 89%;
+    margin-bottom: 20px;
+    font-size:26px;
+    padding: 10px;
+    text-align: right;
+    border: 1px solid white;
+    border-radius: 7px;
+}
+.tombol{
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+ 
+}
+.btn{
+    padding-left: 23px;
+    padding-right: 22px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin:5px;
+    border: none;
+    border-radius: 6px;
+    background-color:pink;
+    cursor:pointer;
+}
+.tombol>button:hover{
+    background-color: #dfa3dfa9;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out; /*Bagian animasi yang buat warna ganti saat mous ke kata tsb*/
+    transition-delay:0.7;
+}
+.Operator{
+    background-color: violet;
+}
+
+.clean{
+    grid-column: span 4;
+    background-color: violet;
+    color: white;
+    width: 100%;
+}
+.kalkulator h3{
+    padding: 3px;
+    margin: 0;
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: 600;
+    color: white;
+}
